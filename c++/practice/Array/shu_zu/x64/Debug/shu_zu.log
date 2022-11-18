@@ -1,3 +1,0 @@
-﻿  源.c
-D:\vsdaima\1\shu_zu\源.c(6,15): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-  shu_zu.vcxproj -> D:\vsdaima\1\shu_zu\x64\Debug\shu_zu.exe
