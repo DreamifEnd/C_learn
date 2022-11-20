@@ -27,12 +27,13 @@ int main()
 				col_2 = j;
 			}
 		}
+	row_1++; col_1++; row_2++; col_2++;
 	cout << "最大值为: " << max << endl
 		<< "所在的行为: " << row_1 << endl
-		<< "所在的列为: " << col_1 << endl;
+		<< "所在的列为: " << col_1<< endl;
 	cout << "最小值为: " << min << endl
-		<< "所在的行为: " << row_2 << endl
-		<< "所在的列为: " << col_2 << endl;
+		<< "所在的行为: " << row_2<< endl
+		<< "所在的列为: " << col_2<< endl;
 	int sum = 0; 
 	for (i = 0; i < N; i++)
 		sum += arr[i][i];
