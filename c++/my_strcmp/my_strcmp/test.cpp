@@ -9,6 +9,13 @@ int main()
 	cin.getline(str1, 20);
 	cout << "再输入一个字符串\n";
 	cin.getline(str2, 20);
-	cout<<strcmp(str1, str2);
+	int i = 0, n = 0;
+	for(i = 0;;i++)
+		if (str1[i] != str2[i]||str1[i]=='\0'||str2[i] == '\0')
+		{
+			n = str1[i] - str2[i];
+			break;
+		}
+	cout << n;
 	return 0;
 }
