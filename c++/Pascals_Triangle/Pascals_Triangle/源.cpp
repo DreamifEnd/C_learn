@@ -1,4 +1,5 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 #define N 7
 int main()
@@ -16,12 +17,19 @@ int main()
 		}
 	int n = 0;
 	j=0;
+	//for (i = 0; i < N; i++)
+	//{
+	//	for (n = 0; n <= N - j - 1; n++)
+	//		cout << "    ";
+	//	for (j = 0; j <= i; j++)
+	//		cout << arr[i][j] << "        ";
+	//	cout << endl;
+	//}
 	for (i = 0; i < N; i++)
 	{
-		for (n = 0; n <= N - j - 1; n++)
-			cout << "    ";
+		cout << setw(25 - 3 * i);
 		for (j = 0; j <= i; j++)
-			cout << arr[i][j] << "        ";
+			cout << arr[i][j] << setw(6);
 		cout << endl;
 	}
 	return 0;

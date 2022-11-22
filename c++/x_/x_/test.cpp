@@ -37,10 +37,11 @@ int main()
 	int sum = 0; 
 	for (i = 0; i < N; i++)
 		sum += arr[i][i];
-	cout << "主对角线和为: " << sum;
-	sum = 0;
+	//cout << "主对角线和为: " << sum;
+	//sum = 0;
 	for (i = N; i > 0; i--)
 		sum += arr[i-1][N - i];
-	cout << "副对角线和为: " << sum;
+	sum -= arr[N / 2 + 1][N / 2 + 1];
+	cout  << sum;
 	return 0;
 }

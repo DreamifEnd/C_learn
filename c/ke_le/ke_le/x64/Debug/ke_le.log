@@ -1,0 +1,3 @@
+﻿  test.c
+D:\daima_guanli\C_learn\c\ke_le\ke_le\test.c(8): warning C4715: “ke_le”: 不是所有的控件路径都返回值
+  ke_le.vcxproj -> D:\daima_guanli\C_learn\c\ke_le\x64\Debug\ke_le.exe
