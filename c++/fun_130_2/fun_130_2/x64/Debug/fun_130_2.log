@@ -1,0 +1,4 @@
+﻿  test.cpp
+D:\daima_guanli\C_learn\c++\fun_130_2\fun_130_2\test.cpp(8,23): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+D:\daima_guanli\C_learn\c++\fun_130_2\fun_130_2\test.cpp(10,23): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+  fun_130_2.vcxproj -> D:\daima_guanli\C_learn\c++\fun_130_2\x64\Debug\fun_130_2.exe
