@@ -1,33 +1,24 @@
-#include<iostream>
+//
+#include <iostream>
+#include <math.h>
 using namespace std;
-double jie_cheng(int n)
+
+double sinx(double x)
 {
-	int i = 0;
-	double s = 1;
-	for (i = 1; i <= n; i++)
-	{
-		s *= i;
-	}
-	return s;
+    double sum = 0, term = x;
+    int i = 1;
+    while (fabs(term) > 1e-9)
+    {
+        sum += term;
+        i += 2;
+        term *= -1 * x * x / (i * (i - 1));
+    }
+    return sum;
 }
-double my_sin(double x)
+
+int main(int argc, char const* argv[])
 {
-	int n = 1;
-	double s = 0,an = 0;
-	while (fabs(an=pow(x, 2 * n - 1) / jie_cheng(2 * n - 1)) > 0.00001)
-	{
-		if (n % 2 == 0)
-			s -= an;
-		else
-			s += an;
-		n++;
-	}
-	return s;
-}
-int main()
-{
-	double x = 0;
-	cin >> x;
-	cout << my_sin(x)<<endl;
-	return 0;
+    double x = 3.14159;
+    cout << sinx(x) << endl;
+    return 0;
 }

@@ -25,7 +25,9 @@ int main() {
 	char str[80] = { 0 };
 	char str1[40] = { 0 };
 	char str2[40] = { 0 };
+	cout<<"ÇëÊäÈë×Ö·û´®1£º"<<endl;
 	cin.getline(str1, 39);
+	cout << "ÇëÊäÈë×Ö·û´®2£º" << endl;
 	cin.getline(str2, 39);
 	str_cat(str, str1, str2);
 	int i = 0;
