@@ -64,6 +64,40 @@ void SeqListPopFront(SL* ps)
 	ps->Size--;
 
 }
+//指定增
+void SeqListAssignPush(SL* ps,int x,int y)
+{
+	SeqListCapacityCheck(ps);
+	int end = ps->Size - 1;
+	while (end >= x -1)
+	{
+		ps->a[end + 1] = ps->a[end];
+		end--;
+	}
+	ps->a[x-1] = y;
+	ps->Size++;
+}
+//指定删
+void SeqListAssignFront(SL* ps,int x)
+{
+	SeqListCapacityCheck(ps);
+	while (x - 1 <= ps->Size - 1)
+	{
+		ps->a[x - 1] = ps->a[x];
+		x++;
+	}
+	ps->Size--;
+
+}
+//替换
+void SeqListCharge(SL* ps, int x,int y)
+{
+	for (int i = 0; i < ps->Size; i++)
+	{
+		if (ps->a[i] == x)
+			ps->a[i] = y;
+	}
+}
 //打印
 void SeqListPrint(SL* ps)
 {

@@ -28,5 +28,8 @@ void SeqListPopBack(SL* ps);
 //头删
 void SeqListPopFront(SL* ps);
 //指定增
-void SeqList
+void SeqListAssignPush(SL* ps,int x, int y);
 //指定删
+void SeqListAssignFront(SL* ps,int x);
+//替换
+void SeqListCharge(SL* ps, int x,int y);

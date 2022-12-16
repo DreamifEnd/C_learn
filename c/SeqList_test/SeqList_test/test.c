@@ -14,7 +14,8 @@ void TestInit1()
 	SeqListPushBack(&s1, 9);
 	SeqListPushBack(&s1, 10);
 	SeqListPushBack(&s1, 11);
-	SeqListPopFront(&s1);
+	SeqListAssignFront(&s1,2);
+	SeqListCharge(&s1, 1, 5);
 	SeqListPrint(&s1);
 	
 }
