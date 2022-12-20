@@ -6,7 +6,7 @@ class Rectangle {
 	double Right,Bottom;
 public:
 	double Diagonal();
-	void show();
+	void show(Rectangle* p);
 	Rectangle(double l, double t, double r, double b);
 };
 Rectangle::Rectangle(double l, double t, double r, double b)
@@ -22,18 +22,19 @@ double Rectangle::Diagonal()
 	
 	return sqrt(pow(Left - Right, 2) + pow(Top - Bottom, 2));
 }
-void Rectangle::show()
+void Rectangle::show(Rectangle* p)
 {
 	
 	cout << '(' << Left << ',' << Top << ')' << endl;
 
 	cout << '(' << Right << ',' << Bottom << ')' << endl;
+	cout << p->Diagonal() << endl;
 }
 
 int main()
 {
-	Rectangle c(10,10,20,20);
-	c.show();
-	cout << c.Diagonal();
+	Rectangle *p = new Rectangle (10,10,20,20);
+	p->show(p);
+	delete(p);
 	return 0;
 }
