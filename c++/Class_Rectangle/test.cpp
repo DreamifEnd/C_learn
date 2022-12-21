@@ -16,7 +16,6 @@ Rectangle::Rectangle(double l, double t, double r, double b)
 	Right = r;
 	Bottom = b;
 }
-//
 double Rectangle::Diagonal()
 {
 	

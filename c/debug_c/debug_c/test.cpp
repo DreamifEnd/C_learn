@@ -145,12 +145,19 @@
 //    printf("------------------------------------\n");
 //    return 0;
 //}
+//int main()
+//{
+//    float f1;
+//    float f2;
+//    int in;
+//    char cha;
+//    scanf("%f %d %c %f", &f1, &in, &cha, &f2);
+//    printf("%c %d %.2f %.1f", cha, in, f1, f2);
+//}
 int main()
 {
-    float f1;
-    float f2;
-    int in;
-    char cha;
-    scanf("%f %d %c %f", &f1, &in, &cha, &f2);
-    printf("%c %d %.2f %.1f", cha, in, f1, f2);
+    int arr[5] = { 0 };
+    arr[8] = 20;
+    printf("%d", arr[8]);
+    return 0;
 }
