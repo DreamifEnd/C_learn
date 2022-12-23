@@ -154,10 +154,18 @@
 //    scanf("%f %d %c %f", &f1, &in, &cha, &f2);
 //    printf("%c %d %.2f %.1f", cha, in, f1, f2);
 //}
+//int main()
+//{
+//    int arr[5] = { 0 };
+//    arr[8] = 20;
+//    printf("%d", arr[8]);
+//    return 0;
+//}
+#include<stdlib.h>
 int main()
 {
-    int arr[5] = { 0 };
-    arr[8] = 20;
-    printf("%d", arr[8]);
+    int* p = (int*)malloc(sizeof(int));
+
     return 0;
+
 }

@@ -1,2 +1,2 @@
 ﻿  test.cpp
-D:\daima_guanli\C_learn\c\debug_c\debug_c\test.cpp(160): error C4789: 缓冲区“arr”(大小为 20 字节)将溢出；4 字节将在偏移 32 时开始写入
+  debug_c.vcxproj -> D:\daima_guanli\C_learn\c\debug_c\x64\Debug\debug_c.exe
