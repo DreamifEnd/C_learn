@@ -21,7 +21,7 @@ public:
 	{
 		cout << "No = " << No << " Name = " << Name << " Sex = " << Sex << " Age = " << Age << endl;
 	}
-
+	 
 };
 class Laborage : public Archives
 {
