@@ -2,14 +2,12 @@
 using namespace std;
 int main()
 {
-	char a;
-	int cost = 0;
-	while(cin.getchar())
+	string s;
+	int ans = 0;
+	while(cin>>s)
 	{
-		if(a='\n')
-		break;
-		cost++;
+		ans+=s.length();
 	}
-	cout<<cost<<endl;
+	cout<<ans<<endl;
 	return 0;
 }
